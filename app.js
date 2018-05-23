@@ -4,10 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose')
 
-var appRoutes = require('./routes/app');
-
+var appRoutes = require('./routes/app')
+var userRoutes = require('./routes/userRoutes')
+var newsRoutes = require('./routes/newsRoutes')
 var app = express();
+
+mongoose.connect('mongodb://localhost:27017/beavertail')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,11 +32,14 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use('/', appRoutes);
+
+app.use('/api/user', userRoutes)
+app.use('/api/news', newsRoutes)
+app.use('/api/', appRoutes)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-    return res.render('error');
+    return res.render('index');
 });
 
 

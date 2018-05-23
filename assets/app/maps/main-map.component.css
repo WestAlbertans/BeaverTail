@@ -1,0 +1,67 @@
+agm-map {
+    /* height: 400px;
+    width: 100%; */
+
+    /* max-width: none;
+    min-width: 0px; */
+    height:500px;
+    width: 100%;
+    float: left;
+    overflow: auto;
+    border:5px solid white;
+
+
+}
+.footer{
+    margin-bottom:400px;
+}
+button{
+    width: 100%;
+    height: 60px;
+    margin-top:10px;
+    font-size: 2em;
+    background-color: white;
+}
+button a{
+    color: #3dcdbc;
+    color: -moz-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    color: -webkit-gradient(left top, right top, color-stop(0%, #3dcdbc), color-stop(100%, #33a1bd));
+    color:-webkit-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    color:-o-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    color:-ms-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    color:linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dcdbc', endColorstr='#33a1bd', GradientType=1 );
+  
+
+}
+button a:hover {
+    /* background-color: #ddd; */
+    color: white;
+
+}
+
+@media screen and (max-width: 800px) {
+    agm-map, button {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+.info-box {
+    width: 200px;
+    height: 140px;
+    background-color: #3dcdbc;
+    padding: 8px;
+    border-radius: 5%
+}
+
+.col-lg-6{
+    margin-top:30px;
+    resize: both;
+    overflow: auto;
+}
+
+/* @media screen and (max-width: 800px) {
+    .space {
+        margin-top:200px; 
+    }
+  } */

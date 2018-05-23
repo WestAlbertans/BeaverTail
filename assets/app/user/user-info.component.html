@@ -1,0 +1,55 @@
+<img class="user-photo" src="../../images/user.png" alt="default user">
+
+
+
+
+<table>
+    <div class="middle">
+        <div class="info">
+
+            <td>
+                <h1>{{user?.username}}</h1>
+            </td>
+
+            <!-- <hr style="width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 10px;
+        background-color:white;
+        margin-top:-5px;
+        margin-bottom: 5px;
+        "> -->
+        </div>
+        <tr>
+
+
+
+        </tr>
+        <div class="detail">
+            <tr style="padding-top:20px;">
+                <td>Name</td>
+                <td class="socialMedia1">{{user?.name}}</td>
+            </tr>
+            <tr>
+                <td>Bio</td>
+                <td class="socialMedia1">{{user?.bio}}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td class="socialMedia1">{{user?.email}}</td>
+            </tr>
+            <tr>
+                <td>Social Media</td>
+                <td class="socialMedia">
+                    &nbsp;
+                    <a href="{{user?.socialMedia}}">{{user?.socialMedia}}</a>
+                </td>
+            </tr>
+        </div>
+    </div>
+</table>
+<br>
+
+<!-- <button type="button" class="btn btn-info">
+    <a (click)="onEdit()">Edit Profile</a>
+</button> -->
